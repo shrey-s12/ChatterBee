@@ -1,0 +1,13 @@
+{
+  "name": "chatterbee",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend-chatterbee && npm install --prefix frontend-chatterbee && npm run build --prefix frontend-chatterbee",
+    "start": "npm run start --prefix backend-chatterbee"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
