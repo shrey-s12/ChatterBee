@@ -13,10 +13,10 @@ const { app, server } = require('./lib/socket');
 const AuthRoutes = require('./routes/authRouter');
 const MessageRoutes = require('./routes/messageRouter');
 const PORT = process.env.PORT;
-const __dirname = path.resolve();
+const CLIENT_URL = process.env.CLIENT_URL
 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: CLIENT_URL,
     credentials: true
 }));
 app.use(express.json({ limit: "10mb" }));
